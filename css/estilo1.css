@@ -1,0 +1,240 @@
+﻿/* Selector universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 1920px; /* Ancho fijo */
+    height: 768px; /* Alto fijo */
+    overflow: auto; /* Muestra scroll si la ventana es más pequeña */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3 {
+    margin-bottom: 0;
+    padding-bottom: 10px; 
+}
+
+.site-footer {
+    background-color: #1a1a1a;
+    color: #888;
+    padding: 20px 0;
+    margin: 0; 
+    width: 100%;
+}
+
+/* Enlaces generales */
+a {
+    color: #0044cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.Encabezado {
+    background-image: url("../imagenes/encabezado.jpg"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Para que la imagen cubra todo el encabezado */
+    background-position: center; /* Para que la imagen quede centrada */
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+.Encabezado h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: #333; 
+    border-top: 1px solid #444;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    list-style: none; /*Quita los puntos y viñetas*/
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    color: #ddd;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-right: 1px solid #444;
+}
+
+.menu li a:hover {
+    background-color: #444;
+    color: white;
+}
+
+
+.main-wrapper {
+    background-image: url("../imagenes/Fondo.png"); 
+    background-size: cover; /* Hace que la imagen cubra todo el espacio sin deformarse */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita como un mosaico */
+    padding: 20px 0;
+    min-height: 600px;
+
+}
+
+.content-layout {
+    display: flex;
+    gap: 20px;
+}
+
+
+.información-izquierda {
+    flex: 3; /* Ocupa el 75% del espacio aprox */
+}
+
+.apartado {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.apartado h3 {
+    margin-bottom: 5px;
+}
+
+.apartado h3 a {
+    font-size: 1.2rem;
+    color: #0055ff;
+}
+
+.apartado .subtitle {
+    display: block;
+    color: #0055ff;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.apartado p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.lorem {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.sidebar {
+    flex: 1; /* Ocupa el 25% del espacio */
+}
+
+.sidebar-box {
+    background-color: #f0f0f0; 
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Bordes muy redondeados como en la imagen */
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+}
+
+.sidebar-box h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.sidebar-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar-list li {
+    margin-bottom: 15px;
+}
+
+.sidebar-link-title {
+    display: block;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+.sidebar-link-desc {
+    font-size: 0.9rem;
+}
+
+.view-all {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+.site-footer {
+    background-color: #1a1a1a;
+    color: #888;
+    font-size: 0.8rem;
+    border-top: 4px solid #333;
+    margin-top: auto; /* Refuerza que siempre esté abajo */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-center a {
+    color: #888;
+    margin: 0 5px;
+}
+
+.footer-center a:hover {
+    color: white;
+}
+
+/* Ajuste Rpara móviles */
+@media (max-width: 768px) {
+    .content-layout {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   
+}
+
